@@ -1,13 +1,16 @@
 import './App.css';
 import Navbar from './components/navbar/Navbar';
 import Listagem from './components/listagem/Listagem';
-import Popups from './components/popups/Popups';
-import { store, persistor } from "../src/store/"
+import { store } from "../src/store/"
 import { Provider } from "react-redux"
-import { PersistGate } from 'redux-persist/integration/react'
+import { useEffect } from "react";
+
 
 function App() {
 
+  useEffect(() => {
+    document.title = "Certificados"
+  }, [])
 
 
   return (

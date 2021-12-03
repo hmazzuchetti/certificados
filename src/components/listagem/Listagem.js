@@ -121,7 +121,7 @@ function Listagem() {
 
             <div className="barraPesquisa">
                 <h2>Digite o seu CPF:</h2>
-                <input type="text" className="pesquisaCpf" onChange={(e) => setPesquisa(e.target.value)} placeholder="Pesquise seu certificado digitando seu Cpf..." />
+                <input type="text" className="pesquisaCpf" onChange={(e) => setPesquisa(e.target.value)} placeholder="Pesquise seu certificado digitando seu Cpf....." />
             </div>
             <div className="resultados">
                 <Table striped bordered hover>
