@@ -1,0 +1,117 @@
+.pesquisa {
+  display: grid;
+  grid-template-columns: 33% 34% 33%;
+  grid-template-rows: 50% 50%;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 200px;
+  background-color: rgb(243, 230, 243);
+}
+
+.sucesso {
+  grid-template-columns: 3/4;
+  grid-template-rows: 2/3;
+}
+
+.inputCpf {
+  grid-template-columns: 1/2;
+  grid-template-rows: 1/2;
+  margin: 0.5rem;
+}
+.inputEvento {
+  grid-template-columns: 2/3;
+  grid-template-rows: 1/2;
+  margin: 0.5rem;
+}
+.inputPdf {
+  grid-template-columns: 3/4;
+  grid-template-rows: 2/3;
+  margin: 0.5rem;
+  justify-self: center;
+}
+
+.enviar {
+  grid-template-columns: 2/3;
+  grid-template-rows: 2/3;
+}
+
+.downloadFile > p {
+  align-self: center;
+  justify-self: center;
+  font-weight: 700;
+  color: rgb(43, 87, 0);
+}
+
+.pesquisa > button,
+.baixar {
+  border: none;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  border-radius: 5%;
+  width: 100%;
+  height: 60%;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.baixar,
+.enviar {
+  width: 100%;
+  height: 100%;
+  border-radius: 0%;
+  font-size: 1rem;
+  padding: 5px;
+}
+
+.baixar:hover {
+  color: green;
+  background-color: #fff;
+  letter-spacing: 0.2rem;
+}
+
+.pesquisa > button:hover {
+  transform: scale(1.2);
+  color: green;
+  background-color: #fff;
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+}
+
+.resultados {
+  display: grid;
+  margin: 5px;
+  background-color: #ccc;
+}
+
+.align {
+  text-align: center;
+}
+
+.TableHeader {
+  font-size: 1.3rem;
+}
+
+.barraPesquisa {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.pesquisaCpf {
+  min-width: 600px;
+  max-width: 800px;
+  border: 3px solid rgb(90, 89, 89);
+  background-color: darkslategray;
+  margin: 1rem;
+  color: #fff;
+  letter-spacing: 0.2rem;
+  font-weight: 800;
+  border-radius: 4px;
+  transition: 0.2s ease-in-out;
+}
+
+.pesquisaCpf:focus {
+  transform: scale(1.05);
+  background-color: rgb(114, 143, 143);
+  color: black;
+}
